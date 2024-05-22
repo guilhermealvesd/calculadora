@@ -25,15 +25,29 @@ while True:
 
     match op:
         case '+':
-            print(f'A soma é: {x + y}.')
+            print(f'A soma é: {x + y} .')
         case '-':
-            print(f'A subtração é: {x - y}.')
+            print(f'A subtração é: {x - y} .')
         case '*':
-            print(f'A multiplicação é: {x * y}.')
+            print(f'A multiplicação é: {x * y} .')
         case '/':
-            print(f'A divisão é: {x / y}.')
+            print(f'A divisão é: {x / y} .')
         case '%':
-            print(f'O resto da divisão é: {x + y}.')
+            print(f'O resto da divisão é: {x + y} .')
         case _:
             print('Operação inválida')
             continue
+
+    #Criando outra variável para a continuidade das operações na calculadora
+
+    continuar = input('Deseja continuar (s/n)? ')
+
+    #Verificar a opção escolhida pelo usuário
+
+    if continuar == 's':
+        continue
+    elif continuar == 'n':
+        break
+    else:
+        print('Operação inválida')
+        continue
